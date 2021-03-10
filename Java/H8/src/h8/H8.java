@@ -69,6 +69,10 @@ public class H8
             //remove right most digit and loop
             max = max / 10;
         }
+		
+		//close file
+		file.close();
+		f.close();
         
         return digits;
     }

@@ -71,6 +71,10 @@ public class PeopleWork
            {
                fileName = "Employee.dat";
            }
+		   
+		   //close file
+		   file.close();
+		   fin.close();
        }
                
     }
