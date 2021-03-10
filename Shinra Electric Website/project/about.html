@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+	Website project phase 9
+    Web Development & Design Foundations with HTML5
+    Felke-Morris 9th Edition
+
+    Author: Damian Zylski
+    Date:   04/25/2019
+	Edited using Notepad++
+
+    Filename: about.html
+-->
+<title>About Shinra</title>
+<meta charset="utf-8">
+<link rel="icon" href="FAVICON.ico" type="image/x-icon">
+<link rel="stylesheet" href="project.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Shinra was founded in 1951 following the end of World War 2. Visit our about page 
+to learn more about the companies history and the company management.">
+<meta name="author" content="Damian Zylski">
+<meta name = "revised" content = "SHINRA, 4/25/2019" />
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script>
+	$(document).ready(function() 
+	{
+		$('footer div').html("This page was last modified on: " + document.lastModified);
+	});
+</script>
+
+</head>
+<!--Body-->
+<body>
+	<div id="wrapper">
+		<!--Header-->
+		<header>
+			<h1>Shin-Ra Electric Power Company</h1>
+		</header>
+		<!--Nav-->
+		<nav>
+			<ul>
+				<li><a class="button" href="index.html" >Home</a></li>
+				<li><a class="button" href="energy.html" >Energy</a></li>
+				<li><a class="button" href="products.html" >Products</a></li>
+				<li><a class="button" href="orders.html" >Orders</a></li>
+				<li><a class="button" href="about.html" >About</a></li>
+				
+			</ul>
+		</nav>
+		<!--Main-->
+		<main>
+			<div class="floatrightabout" >
+				<h2 class="silverborder" >Departments</h2>
+				<p>Office of the President</p>
+				<img class="dept" src="images/pres.jpg" alt="Company president">
+				<p>Weapons Development</p>
+				<img class="dept" src="images/weapons.jpg" alt="weapons executive">
+				<p>Public Safety</p>
+				<img class="dept" src="images/public.jpg" alt="public executive">
+				<p>Urban Development</p>
+				<img class="dept" src="images/urban.jpg" alt="urban executive">
+				<p>Space Program</p>
+				<img class="dept" src="images/space.jpg" alt="space executive">
+				<p>Research</p>
+				<img class="dept" src="images/research.jpg" alt="research executive">
+			</div>
+			<!--Middle Column-->
+			<div class="aboutmargin" >
+				<h2 class="silverborder" >The Shinra Electric Power Company</h2>
+				<p>The Shinra electric power company has been around since 1951 following the end of World War 2. 
+				Shinra started off as a weapons manufacturer and automobile manufacturer. Since then Shinra has been 
+				researching Mako energy as a power source and this has lead to a breakthrough in the realm of energy.</p>
+				<p>Today Shinra has branched out into a multi department company with a presence in almost every nation.
+				 Many cutting edge projects are being undertaken by Shinra including a cutting edge space program! Shinra 
+				 will continue to lead the energy revolution of tomorrow.</p>
+			</div>
+			<div class="aboutmargin" >
+				<h2 class="silverborder" >Company Executives</h2>
+				<a href="images/execs.jpg" ><img id="execs" src="images/execs.jpg" alt="Company Executives"></a>
+				<audio id="audio" controls="controls" title="Shinra parade song">
+					<source src="media/parade.mp3" type="audio/mpeg">
+					<source src="media/parade.ogg" type="audio/ogg">
+					<a href="media/parade.mp3">Download the Shinra Parade Audio File</a> (MP3)
+				</audio>
+			</div>
+			<section class="aboutmargin" >
+				<p>To contact the Shinra Electric Power Company with general questions, or to leave a comment 
+				please use the form provided below. Our contact information is as follows:<br><br> 
+				Phone: 773-555-7777<br><br>
+				Email: info@shinra.com<br><br>
+				Address: 1 Midgar Way, Midgar, Midgar.<br><br>
+				</p>
+				<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+					<fieldset>
+					<legend>Contact Form</legend>
+						<label for="Name">Name: </label>
+						<input type="text" name="Name" id="Name" size="35" required="required" tabindex="9"><br><br>
+						<label for="myemail">Email: </label>
+						<input type="email" name="myemail" id="myemail" size="35" required="required" tabindex="17"><br><br>
+						<label for="comments">Comments</label><br>
+						<textarea name="comments" id="comments" rows="4" cols="40" tabindex="18"></textarea>
+					</fieldset>
+					<input id="submit" type="submit" value="Submit" tabindex="20">
+				</form>
+			</section>
+			
+		</main>
+		<!--Footer-->
+		<footer>
+			Copyright &copy; 2019 Shinra Electric Power Company<br>
+			<div></div>
+			<a href="mailto:info@shinra.com">Info@Shinra.com</a>
+
+		</footer>
+	</div>
+</body>
+
+</html>

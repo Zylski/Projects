@@ -1,0 +1,79 @@
+INSERT INTO `dz53901`.`customer` (`custID`, `custFirstName`, `custLastName`, `custZipcode`, `custCity`, `custState`, `custStreet`) VALUES ('18600', 'Boris', 'Grishenko', '92831', 'Fullerton', 'CA', '1127 East Ash Ave');
+
+INSERT INTO `dz53901`.`customer` (`custID`, `custFirstName`, `custLastName`, `custZipcode`, `custCity`, `custState`, `custStreet`) VALUES ('18601', 'Seifer', 'Almasy', '60629', 'Chicago', 'IL', '4200 W 55th St');
+
+INSERT INTO `dz53901`.`customer` (`custID`, `custFirstName`, `custLastName`, `custZipcode`, `custCity`, `custState`, `custStreet`) VALUES ('18602', 'Xenia', 'Onatopp', '08846', 'Middlesex', 'NJ', '200A Wood Avenue');
+
+INSERT INTO `dz53901`.`customer` (`custID`, `custFirstName`, `custLastName`, `custZipcode`, `custCity`, `custState`, `custStreet`) VALUES ('18603', 'Rob', 'Zombie', '01830', 'Havervill', 'MA', '280 Main St');
+
+INSERT INTO `dz53901`.`customerphone` (`custID`, `phoneNumber`) VALUES ('18600', '714 871-1605');
+
+INSERT INTO `dz53901`.`customerphone` (`custID`, `phoneNumber`) VALUES ('18601', '773 735-0774');
+
+INSERT INTO `dz53901`.`customerphone` (`custID`, `phoneNumber`) VALUES ('18601', '773 498-2642');
+
+INSERT INTO `dz53901`.`customerphone` (`custID`, `phoneNumber`) VALUES ('18602', '908 753-8777');
+
+INSERT INTO `dz53901`.`customerphone` (`custID`, `phoneNumber`) VALUES ('18603', '978 372-4174');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('A1506', 'CARBURETOR WCFB', '649.95', '100.00', '22.00', '7');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('C1671', 'CARBURETOR QJET', '259.95', '50.00', '21.00', '5');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('A1518', 'CARBURETOR AFB', '895.95', '100.00', '20', '2');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('B0454', 'ALTERNATOR', '224.95', '50.00', '22.00', '1');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('A7816', 'STARTER', '259.95', '50.00', '25.00', '4');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('B2504', 'DISTRIBUTOR', '895.95', '50.00', '17.00', '3');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('B1572', 'CARBURETOR KIT', '27.95', '0.00', '5.95', '24');
+
+INSERT INTO `dz53901`.`part` (`partNumber`, `PartName`, `price`, `coreCharge`, `shippingCost`, `QuantityInStock`) VALUES ('C3571', 'FIBERGLASS PANELS SET', '4750.95', '0.00', '100.00', '0');
+
+INSERT INTO `dz53901`.`vendor` (`vendorID`, `vendorAddress`, `vendorName`) VALUES ('10254', 'Reedsville, PA 17084', 'Corvette America');
+
+INSERT INTO `dz53901`.`vendor` (`vendorID`, `vendorAddress`, `vendorName`) VALUES ('10255', 'Sawyer MI 49125', 'Corvette Central');
+
+INSERT INTO `dz53901`.`vendor` (`vendorID`, `vendorAddress`, `vendorName`) VALUES ('10256', 'Burr Ridge, IL 60527', 'Corvette Mike');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10255', 'A1506', 'N');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10255', 'A1518', 'N');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10255', 'C1671', 'N');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10255', 'B1572', 'N');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10254', 'B2504', 'N');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10256', 'C3571', 'Y');
+
+INSERT INTO `dz53901`.`supplies` (`vendorID`, `partNumber`, `isDropShip`) VALUES ('10256', 'B2504', 'N');
+
+INSERT INTO `dz53901`.`orderrecord` (`orderID`, `orderDate`, `orderTime`, `comments`, `customer`) VALUES ('387001', '2018-11-01', '14:02', 'Send a C2 catalog', '18600');
+
+INSERT INTO `dz53901`.`orderrecord` (`orderID`, `orderDate`, `orderTime`, `comments`, `customer`) VALUES ('387002', '2018-10-31', '13:54', NULL, '18601');
+
+INSERT INTO `dz53901`.`orderrecord` (`orderID`, `orderDate`, `orderTime`, `comments`, `customer`) VALUES ('387003', '2018-11-03', '04:03', 'Send an extra gasket', '18602');
+
+INSERT INTO `dz53901`.`orderrecord` (`orderID`, `orderDate`, `orderTime`, `comments`, `customer`) VALUES ('387004', '2011-10-15', '15:32', 'NEVER sell anything to this guy again', '18603');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387001', 'B1572', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387001', 'C1671', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387002', 'A7816', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387002', 'B1572', '3');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387003', 'A1506', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387003', 'B1572', '2');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387004', 'B0454', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387005', 'C3571', '1');
+
+INSERT INTO `dz53901`.`includes` (`orderID`, `partNumber`, `quantityOrdered`) VALUES ('387005', 'C1671', '1');

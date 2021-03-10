@@ -1,0 +1,56 @@
+CREATE TABLE customer
+(      custID          INT         NOT NULL,
+       custFirstName       VARCHAR(30) NOT NULL,
+       custLastName        VARCHAR(30) NOT NULL,
+       custZipcode         INT         NOT NULL,
+       custCity            VARCHAR(30) NOT NULL,
+       custState           CHAR(2)     NOT NULL,
+       custStreet          VARCHAR(30) NOT NULL,
+       PRIMARY KEY (custID) );
+
+CREATE TABLE customerPhone
+(      custID          INT            NOT NULL,
+       phoneNumber     VARCHAR(15)    NOT NULL,
+       PRIMARY KEY (phoneNumber, custID),
+       FOREIGN KEY (custID) REFERENCES customer (custID) );
+
+CREATE TABLE orderRecord
+(      orderID          INT            NOT NULL,
+       orderDate        DATE           NOT NULL,
+       orderTime        varChar(10)    NOT NULL,
+       comments         varChar(60),   
+       customer         INT            NOT NULL,
+       PRIMARY KEY (orderID),
+       FOREIGN KEY (customer) REFERENCES customer (custID) );
+
+CREATE TABLE part
+(      partNumber       VARCHAR(10)      NOT NULL,
+       price            NUMERIC(4,2)     NOT NULL,
+       coreCharge       NUMERIC(3,2)     NOT NULL,
+       shippingCost     NUMERIC(3,2)     NOT NULL,
+       QuantityInStock  INT              NOT NULL,
+       PRIMARY KEY (partNumber) );
+
+CREATE TABLE includes
+(      orderID          INT            NOT NULL,
+       partNumber       VARCHAR(10)    NOT NULL,
+       quantityOrdered  INT            NOT NULL,
+       PRIMARY KEY (orderID, partNumber),
+       FOREIGN KEY (orderID) REFERENCES orderRecord (orderID),
+       FOREIGN KEY (partNumber) REFERENCES part (partNumber) );
+
+CREATE TABLE vendor
+(      vendorID          INT           NOT NULL,
+       vendorAddress     VARCHAR(30)   NOT NULL,
+       vendorName        VARCHAR(30)   NOT NULL,
+       PRIMARY KEY (vendorID) );
+
+CREATE TABLE supplies
+(      vendorID        INT            NOT NULL,
+       partNumber      VARCHAR(10)    NOT NULL,
+       isDropShip      CHAR(1)        NOT NULL,
+       PRIMARY KEY (vendorID, partNumber),
+       FOREIGN KEY (vendorID) REFERENCES vendor (vendorID),
+       FOREIGN KEY (partNumber) REFERENCES part (partNumber) );
+
+

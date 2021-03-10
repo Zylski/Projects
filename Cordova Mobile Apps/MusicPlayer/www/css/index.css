@@ -1,0 +1,258 @@
+/*
+    Author: Damian Zylski
+    Date:   04/12/2020
+	Edited using Notepad++
+
+    Filename: finalproject.css
+   */
+   
+@font-face {
+   font-family: "Castelar";
+   src: url(FONTS/CASTELAR.TTF) format("truetype");}
+   
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	/*
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4) Disabling the background for now with the line below
+	*/
+	background-image: none; 
+    background-attachment: fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:20px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform: none;
+    width:100%;
+	background-color: #171717;
+	color: #CCCCCC;
+}
+
+p   {padding-left: 20px;
+	 padding-right: 20px;
+	 padding-top: 2px;
+	 padding-bottom: 2px;
+    }
+
+/* Portrait layout (default) */
+.app {
+    /*background:url(../img/logo.png) no-repeat center top;*/ /* 170px x 200px */
+    position: static;           /* position in the center of the screen. CHANGED TO STATIC */
+	left:50%;
+    top:50%;
+    height:auto;                   /* text area height */
+    width:100%;                   /* text area width */
+    text-align:center;
+	padding:0% 0px 0px 0px;   /* image height is 200px (bottom 20px are overlapped with text)*/
+    margin: auto; /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position: left center;
+        padding:0% 0% 0% 0%; /* padding-top + padding-bottom + text area = image height */
+        margin: auto; /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:bold;
+    margin:0px;
+    overflow:visible;
+    padding:5px;
+    text-align:center;
+    font-family: "Castelar";
+	color: #FFAF00;
+}
+
+header          {background-color: #770000;
+				font-family: "Castelar";
+			    }
+
+
+	table       {width: auto;
+
+				margin: 0em;
+				background-color: #111111;
+				border-spacing: 0;
+				padding: 0em;
+				padding-bottom: 0em;
+				margin-bottom: 0em;}
+	
+	td          {margin: auto;
+				 margin-bottom: 0em;
+				 padding-top: 2%;
+				 padding-bottom: 2%;
+				 font-size: 100%;
+				 width: auto;
+				 text-align: center;
+				 font-family: "lucida sans unicode f";
+				 color: #CCCCCC;
+				 
+				 border: 1px inset #FFFFFF;}
+				 
+	th			{margin: auto;
+				margin-bottom: 0em;
+				 padding: 0em;
+				 padding-bottom: 0em;
+				 font-size: 100%;
+				 text-align: center;
+				 width: auto;
+				 font-weight: normal;
+				 font-family: "lucida sans unicode f";
+				 color: #FFAF00;
+				 background-color: #770000;}
+				 
+	tr			{padding: 0em;
+				 margin: 0em;
+				 color: #FFFFFF;
+				 background-color: #111111;
+				 
+		
+				}
+				
+				 
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:none; /*hid the ready block here*/
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+	display: none;
+
+}
+
+	
+#table1 {border-spacing: 0em;
+		 padding: 0em;
+		 margin: auto;
+		 margin-top: 0.5em;
+		 width: 95%;
+		 border: 3px inset #FFFFFF;
+    }
+	
+#table2 {border-spacing: 0em;
+		 padding: 1%;
+		 width: 100%;
+    }
+	
+#table3 {border-spacing: 0em;
+		 padding: 0em;
+		 width: 100%;
+		 background-color: #333333;
+		 
+    }
+	
+#tablestyle {width: 100%;
+			 height: 120px;
+			 margin:0em;
+			 background-size: 100% 100%;
+			 
+			 overflow: auto;
+			 
+    }
+	
+.note	       {height:auto;		
+				width:60%;					
+				margin:auto;
+				margin-top: 0.5em;
+			    padding: 0em;
+				padding-bottom: 0em;
+				background-size: 100% 100%;}
+				
+.slider	       {height:auto;		
+				width:90%;					
+				margin:auto;
+			    padding: 0em;
+				padding-bottom: 0em;
+				background-size: 100% 100%;}
+				
+.volumetag	    {font-size: 90%;
+				padding: 0em;
+				margin: 0em;
+				}
+				
+.playing       {height:auto;		
+				width:95%;					
+				margin:auto;
+			    padding: 0em;
+				padding-bottom: 0em;
+				background-size: 100% 100%;
+				text-align: center;
+				font-size: 105%;
+				background-color: #333333;
+				color: #FFFFFF;}
+				
+.label       {height:auto;		
+				width:85%;					
+				margin:auto;
+			    padding: 0em;
+				padding-bottom: 0em;
+				background-size: 100% 100%;
+				text-align: left;
+				font-size: 100%;
+color: #FFFFFF;}
+
+.button {height: auto;
+         width:  30%;
+		 text-align: center;
+		 font-size: 90%;
+		 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		 border-radius: 10px;
+		 margin-top: 0.5em;
+		 margin-bottom: 0.5em;}
+				
+
+.noPadding {padding:0em;
+			margin: 0em;
+           }	
+				

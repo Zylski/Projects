@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "edu.sxu.d01.zylski.finalproject"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "edu.sxu.d01.zylski.finalproject"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "edu.sxu.d01.zylski.finalproject"
+    }
+  },
+  "dependent_plugins": {}
+}

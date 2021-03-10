@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- 
+    Damian Zylski
+    finalproject
+    4/12/2020
+    A music player. Referred to many internet examples to get some of this working
+-->
+<html lang="en">
+    <head>
+        <!--Head-->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+		<meta charset="utf-8">
+		<link rel="icon" href="img/FAVICON.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A simple Web page">
+		<meta name="author" content="Damian Zylski">
+		<meta name = "revised" content = "SHINRA, 4/12/2020" />
+        <title>FinalProject</title>
+    </head>
+    <body>
+        <div class="app"> <!---->
+			
+		<!--Header-->
+		<header>
+            <h1>Music Player V2</h1>
+		</header>
+		<!--Nav-->
+		<nav>
+		
+		</nav>
+		<!--Main-->
+		<main>
+			<div id="deviceready" class="blink">
+			
+				<p class="event listening">SYSTEM MALFUNCTION</p>
+				<p class="event received">SYSTEM MALFUNCTION</p>
+			</div>
+			<!--Music note picture-->
+			<div>
+				<img class="note" src="img/note.png" alt="Music note">
+			</div>
+			<!--Now playing-->
+			<div>
+				<label class="label" for="playing" >Now Playing: </label>
+				<input type="text" class="playing" id="playing" name="bagpipes" value="Bag Pipes" disabled ><br>
+			</div>
+			<!--Music directory-->
+			<!--Had to set the table up this weird way to get it to scroll-->
+			<div>
+				<table id="table1" >
+				  <tr>
+					<td>
+					   <table id="table2" >
+						 <tr >
+							<th>Music List</th>
+						 </tr>
+					   </table>
+					</td>
+				  </tr>
+				  <tr>
+					<td>
+					   <div id="tablestyle" >
+						 <table id="table3" >
+						   <tr>
+							 <td id="bagpipes" >Bag Pipes</td>
+						   </tr>
+						   <tr>
+							 <td id="parade">Parade</td>
+						   </tr>
+						   <tr>
+							 <td id="jig">Jig</td>
+						   </tr>
+						   <tr>
+							 <td id="marimba" >Marimba</td>
+						   </tr>
+						   <tr>
+							 <td id="merengue" >Merengue</td>
+						   </tr>
+						   <tr>
+							 <td id="man" >The Man Who Sold The World</td>
+						   </tr>
+						   <tr>
+							 <td id="never" >Never Gonna Give You Up</td>
+						   </tr>
+						 </table>  
+					   </div>
+					</td>
+				  </tr>
+				</table>
+			</div>
+				<!--media buttons-->
+				<div>
+					<button class="button" id = "playAudio">PLAY</button>
+					<button class="button" id = "pauseAudio">PAUSE</button>
+					<button class="button" id = "stopAudio">STOP</button><br>
+					<p class="volumetag" >Volume</p>
+					<input type="range" class="slider" id="vol" name="points" min="0" max="10" value="5"><br>
+				</div>
+		</main>
+		<!--Footer-->
+		<footer>
+		</footer>
+	</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

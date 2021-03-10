@@ -1,0 +1,11 @@
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\bin\Debug\PeopleWorkVB.exe.config
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\bin\Debug\PeopleWorkVB.exe
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\bin\Debug\PeopleWorkVB.pdb
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\bin\Debug\PeopleWorkVB.xml
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.vbprojResolveAssemblyReference.cache
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.StudentDatabase.resources
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.Resources.resources
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.vbproj.GenerateResource.Cache
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.exe
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.xml
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\PeopleWorkVB\PeopleWorkVB\obj\Debug\PeopleWorkVB.pdb

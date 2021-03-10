@@ -1,0 +1,11 @@
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\bin\Debug\H7VB.exe.config
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\bin\Debug\H7VB.exe
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\bin\Debug\H7VB.pdb
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\bin\Debug\H7VB.xml
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.Resources.resources
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.WordChecker.resources
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.vbproj.GenerateResource.Cache
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.exe
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.xml
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.pdb
+C:\Users\Zylski\Documents\Visual Studio 2017\Projects\202\H7VB\H7VB\obj\Debug\H7VB.vbprojResolveAssemblyReference.cache

@@ -1,0 +1,453 @@
+/*
+    Website project phase 8
+    Web Development & Design Foundations with HTML5
+    Felke-Morris 9th Edition
+
+    Author: Damian Zylski
+    Date:   04/18/2019
+	Edited using Notepad++
+
+    Filename: shoppingcart.css
+   */
+   
+   @font-face {
+   font-family: "Castelar";
+   src: url(FONTS/CASTELAR.TTF) format("truetype");}
+   
+   @font-face {
+   font-family: "lucida sans unicode f";
+   src: url(FONTS/LUNI.TTF) format("truetype")}
+   
+   *			{box-sizing: border-box;}
+   
+   body  	  	{margin-right: auto;
+				margin-left:  auto;
+				width: 80%; 
+				background-color: #171717; /*171717*/
+				font-family: lucida sans unicode f;
+				color: #FFAF00;
+				min-width: 900px;
+				max-width: 1280px;
+				box-shadow: 4px 4px 4px #33FFCC; }
+				
+  
+   h1			{ padding-top: 60px;
+				padding-left: 140px;
+				text-align: center;
+				font-family: "Castelar";
+				font-size: 2.2em;
+				color: #440000;
+				background-color: #440000;}
+				
+	main		{padding-bottom: 3em;
+				margin-bottom: 0;
+				margin-top: 0.5em;
+				padding-right: 2em;
+				padding-left: 2em;
+				background-color: #171717;}
+	main div p {padding: 0.5em;}
+	main a         {text-decoration: none;}
+	main a:link    {color: #FFAA00;}
+	main a:visited {color: #995500;}
+	main a:hover   {color: #555555;}
+	
+	table      {width: 95%;
+				margin: auto;
+				border-spacing: 0;
+				background-color: #272727;
+				border: 5px inset #CCCCCC;
+				padding: 0}
+				
+	caption 	{font-size: 1.6em;
+				font-weight: bold; 
+				padding: 0.5em;}
+			  
+	th, td 		{padding: 10px;
+				border: 5px inset #CCCCCC;
+				color: #FFAA00}
+	th			{font-size: 1.5em;
+				font-weight: bold;}
+	thead td	{font-size: 1.5em;
+				font-weight: bold;
+				text-align: center}
+	th img		{padding: 0.5em;
+				background-size: 100% 100%;}
+
+	tr:nth-of-type(odd)  {background-color: #440000;}
+	
+	tfoot td	{text-align: center;
+				color: #CCCCCC}
+  
+				
+	nav			{text-align: center; 
+				font-size: 1.5em; 
+				padding-top: 0;
+				padding-bottom: 0;
+				padding-right: 0;
+				padding-left: 0;
+				margin-left: 0;
+				margin-right: 0;
+				margin-top: 0;
+				margin-bottom: 0;
+				border-top: 2px solid #770000;
+				border-bottom: 2px solid #770000;}
+				
+	nav ul 		{text-decoration: none;
+				list-style-type: none;
+				padding: 0.2em; 
+				margin: 0.2em;}
+				
+	nav li		{display: inline;}
+	
+	nav a         {text-decoration: none;
+				  display: inline-block;}
+	nav a:link    {color: #FFAA00;}
+	nav a:visited {color: #995500;}
+	nav a:hover   {color: #999999;}
+							
+	h2			{text-align: center;}
+	
+	form		  {padding: 2em;
+				   padding-left: 1.5em;
+				   padding-right: 1.5em;
+				   background-color: #171717;
+				   color: #FFAF00;
+				   text-align: left;
+				   width: 100%;
+				   margin: auto}
+				   
+	section form  {padding: 2em;
+				   padding-left: 1.5em;
+				   padding-right: 1.5em;
+				   background-color: #171717;
+				   color: #FFAF00;
+				   text-align: left;
+				   width: 100%;
+				   margin: auto}
+				   
+	section {background-color: #440000;}
+				   
+	form img	{margin: auto;
+				 max-width: 100%;
+				 padding: 0.3em;
+				 display: inline}
+
+	label		  {display: inline;
+				   padding-left: 0.1em;
+				   padding-bottom: 1em;
+				   }
+		
+	input 			 {margin-bottom: 1em;
+					 margin: auto;
+				     width: auto;}
+					 
+	textarea		{max-width: 100%;
+					margin: auto}
+					
+	fieldset		{padding: 1em;}
+					
+    fieldset table  {width: 75%;
+					 border: none;
+					 background-color: #440000} /*#440000*/
+	
+	fieldset table th, fieldset table td {padding: 0;
+										  margin: 0;
+										  border: 1px solid #CCCCCC}
+	fieldset table td {width: 14%;
+					   padding-left: 0.5em;}	
+
+	fieldset table tr:nth-of-type(odd)  {background-color: #440000;}
+	
+	
+
+   
+   footer		{ background-color: #171717;
+				font-size: .60em;
+				font-style: italic;
+				color: #FFFFFF;
+				text-align: center; 
+				padding-bottom: 10px;
+				border-top: 2px solid #770000; }
+	footer a	{text-decoration: none;
+				 color: #FFFFFF;}
+   
+   #wrapper     { margin-right: auto;
+				margin-left:  auto;
+				width: 80%; 
+				background-color: #171717; /*171717*/
+				font-family: lucida sans unicode f;
+				color: #CCCCCC;
+				min-width: 900px;
+				max-width: 1280px;
+				box-shadow: 4px 4px 4px #33FFCC; }
+				
+	
+	.floatleft	{float: left;
+				padding-left: 1em;
+				padding-right: 1em;
+				width: 200px;
+				border: 5px inset #CCCCCC;
+				list-style-image: url(images/sword.jpg);}
+				
+	
+	.floatright	{float: right;
+				background-color: #440000;
+				padding-left: 2em;
+				margin-top: 2em;
+				padding-right: 2em;
+				color: #FFAA00;
+				width: 200px;}
+				
+	.floatrightabout	{float: right;
+				width: 200px;}
+				
+				
+	
+	
+  .homemargin	{margin-left: 225px;
+				margin-right: 225px;
+				border: 5px inset #CCCCCC;}
+				
+  .aboutmargin	{margin-left: 2px;
+				margin-right: 225px;
+				margin-bottom: 10px;
+				padding: 1em;
+				border: 5px inset #CCCCCC;}
+				
+				
+  .center  {text-align: center;}
+  
+				
+				
+  #midgar	{border: 5px inset #CCCCCC;
+				background-size: 100% 100%;
+				height: 600px;
+				width: 800px;
+				max-width: 100%;
+				height: auto;}
+		
+   #video	{border: 5px inset #CCCCCC;
+				background-size: 100% 100%;
+				height: 600px;
+				width: 800px;
+				max-width: 100%;
+				height: auto;}
+				
+   #execs	{background-size: 100% 100%;
+				height: 600px;
+				width: 800px;
+				width: 100%;
+				height: auto;
+			    padding-right: 5em;
+				padding-left: 5em;}
+				
+	.dept	{background-size: 100% 100%;
+				width: 85%;
+				height: auto;
+			    padding-right: 0.1em;
+				padding-left: 0.1em;}
+				
+	.hidden	{color: #171717;
+			padding: 0;
+			margin: 0;}
+				
+	#audio	{background-size: 100% 100%;
+				height: 600px;
+				width: 800px;
+				width: 100%;
+				height: auto;
+			    padding-right: 5em;
+				padding-left: 5em;
+				padding-top: 3em;}
+				
+  #soldier	{border: 5px inset #CCCCCC;
+				background-size: 100% 100%;
+				max-width: 120%;
+				height: auto;}
+				
+  #mobile  	  { display: none; }
+  #desktop 	  { display: inline; 
+			   height: 250px;}
+				
+  .silverborder	{border: 5px inset #CCCCCC;
+				}
+				
+	.button {border: 5px inset #CCCCCC;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: #FFFFFF;
+	background-color: #440000;
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	width: 19%;}
+	
+	#pay_button	{border: 5px inset #CCCCCC;
+	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0.1em;
+	color: #000000;
+	background-color: #FFAA00;
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	width: 60%;}
+	
+	#checkout_button	{border: 5px inset #CCCCCC;
+	background-color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;}
+	
+	
+	#submit:hover {color: #555555;}
+	
+	.buyitnow {border: 5px inset #CCCCCC;
+	margin-top: 1em;
+	margin-left: 0;
+	margin-right: 90%;
+	margin-bottom: 0.1em;
+	padding: 0.1em;
+	color: #000000;
+	background-color: #FFAA00;
+	font-family: Arial, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: none;
+	width: 25%;}
+	
+	.buyitnow:hover {color: #555555;}
+	
+	header, main, nav, footer, section, article, figure, figcaption,
+	aside { display: block; }
+	
+	@media only screen and (max-width: 1024px) 
+			  {body {margin: 0;
+			  background-image: none;}
+			  #wrapper {width: auto;
+			  min-width: 0;
+			  margin: 0; 
+			  padding: 0;
+			  box-shadow: none;}
+			  #soldier {
+			  min-width: 0;
+			  margin: 0; 
+			  padding: 0;
+			  max-width: 80%;}
+			  .floatleft {
+			  margin: 0.1em; 
+			  padding: 0.3em;}
+			  .floatright {
+			  margin: 0.1em; 
+			  padding: 0.3em;}
+			  .button {width: 19%;}
+			  header {border-bottom: 5px solid #FFAA00;}
+			  form {margin: 0em;
+					padding: 0em;}
+			  h1 {margin-top: 0;
+			  margin-bottom: 1em;
+			  padding-bottom: 1em;
+			  padding-top: 1em;
+			  font-size: 2.5em;}
+			  nav {width: auto;
+			  padding-top: 0;
+			  margin: 5px;
+			  font-size: 1.3em;
+			  border-left: 2px solid #770000;
+			  border-right: 2px solid #770000;}
+			  nav li {display: inline;}
+			  nav a {padding: 0.5em;
+			  width: 7em;
+			  font-weight: bold;
+			  border-style: none;}
+			  nav ul {padding: 0;
+			  margin: 0;}
+			  th img {max-width: 100%;
+					  width: 100%}
+			  th 	 {padding: 0;
+					  margin: 0;
+					  max-width: 100%}
+			  tbody td {font-size: 1.3em;
+			  padding: 0.3em}
+			  form  {padding: 0.1em;
+					 font-size: 1.3em;}
+			  main {margin: 0;
+			  font-size: 90%;}
+			  
+				}
+				
+	@media only screen and (max-width: 768px) {
+			  header {  
+			  background-image: url(images/shinra_logo_mini.jpg);
+			  height: 128px;}
+			  h1 {font-size: 1.4em;
+			  padding-left: 0;
+			  font-weight: bold;
+			  margin-left: 110px;
+			  padding-top: 0.4em;}
+			  nav {margin: 0;
+			  padding-left: 0;
+			  padding-right: 0}
+			  nav a {display: block;
+			  padding: 0.1em;
+			  width: auto;}
+			  nav li {display: block;}
+			  main {padding-top: 1px;
+			  margin: 0;}
+			  main div p {padding: 0.2em;}
+			  body {margin: 0}
+			  th img {max-width: 100%;
+					  width: 100%}
+			  th 	 {padding: 0;
+					  margin: 0;
+					  max-width: 100%}
+			  tbody td {font-size: 1.3em;
+			  padding: 1em}
+			  form input {display: block;}
+			  form  {padding: 0;
+					 font-size: 1.5em;}
+			  form img {display: none;}
+			  fieldset table td {width: 0%}
+			  section form  {padding: 0.1em;
+				   padding-left: 0.1em;
+				   padding-right: 0.1em;
+				   background-color: #171717;
+				   color: #FFAF00;
+				   text-align: left;
+				   width: 100%;
+				   margin: auto}
+			  section form input {width: 80%;}
+			  section #submit {width: 40%;}
+			  h2 {padding-top: 0.5em;
+			  padding-right: 0;
+			  padding-left: 0.1em;
+			  margin-right: 0.1em;
+			  font-size: 200%;}
+			  p {font-size: 200%;}
+			  #midgar {display: none}
+			  #wrapper {width: auto;}
+			  #submit {width: 35%}
+			  .floatleft {display: none;
+			  padding-right: 0;}
+			  .floatright {display: none;
+			  padding-right: 0;}
+			  .floatrightabout {display: none;
+			  padding-right: 0;}
+			  .homemargin {margin: 0;}
+			  .aboutmargin {margin: 0;}
+		      #audio {padding: 0.1em}
+			  #video {display: none;}
+			  .button {padding: 0.2em;
+			  margin: 0;
+			  width: 100%}
+			  #mobile { display: inline; }
+			  #desktop { display: none; }
+              }
