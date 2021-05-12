@@ -1,0 +1,10 @@
+com\shinra\utopia\dao\UserDAO.class
+com\shinra\utopia\dao\UserRoleDAO.class
+com\shinra\utopia\service\AdminService.class
+com\shinra\utopia\service\LoginService.class
+com\shinra\utopia\entity\User.class
+com\shinra\utopia\entity\UserRole.class
+com\shinra\utopia\service\Utility.class
+com\shinra\utopia\admin\AdminServlet.class
+com\shinra\utopia\dao\BaseDAO.class
+com\shinra\utopia\login\UtopiaLogin.class

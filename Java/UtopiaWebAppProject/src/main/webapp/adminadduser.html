@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Programmer: Damian Zylski
+Date: 3/17/21
+System: Windows 7 Enterprise - Netbeans 12
+Project: Utopia
+File: adminAdduser.HTML
+
+Purpose: To create the add users option page for admin Users
+-->
+<html>
+    <head>
+        <title>ADMIN ADD USERS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="utopia.css" >
+        <meta name="description" content="A admin web page">
+        <meta name="author" content="Damian Zylski">
+        <meta name = "revised" content = "Shinra, 4/01/2021" />
+    </head>
+    <body>
+        <div id="wrapper" >
+            <header>
+                <h1>Administrator Control Panel</h1>
+            </header>
+            <nav>
+                <a href="index.html" ><button>Home</button></a>
+            </nav>
+        <main>
+            <section>
+                <br>
+                <fieldset>
+                    <legend>Please enter details for new user to add. Click submit when finished</legend>
+                    <br>
+					<!--FLIGHT-->
+					<form action="AdminServlet" method="post" >
+					<input type="hidden" id="custId" name="action" value="addUsers">
+					
+					<label for="Name" >ID: </label><br>
+                    <input type="text" name="ID" size="25" required="required" tabindex="1">
+					<br>
+					<label for="Name" >Role ID: </label><br>
+                    <input type="text" name="Role" size="25" required="required" tabindex="2">
+					<br>
+					<label for="Name" >First Name: </label><br>
+                    <input type="text" name="First Name" size="25" required="required" tabindex="3">
+					<br>
+					<label for="Name" >Last Name: </label><br>
+                    <input type="text" name="Last Name" size="25" required="required" tabindex="4">
+					<br>
+					<label for="Name" >Username: </label><br>
+                    <input type="text" name="Username" size="25" required="required" tabindex="5">
+					<br>
+					<label for="Name" >Email: </label><br>
+                    <input type="text" name="Email" size="25" required="required" tabindex="6">
+					<br>
+					<label for="Name" >Password: </label><br>
+                    <input type="text" name="Password" size="25" required="required" tabindex="7">
+					<br>
+					<label for="Name" >Phone: </label><br>
+                    <input type="text" name="Phone" size="25" required="required" tabindex="8">
+					<br>
+					<input type="submit" value="Submit User" name="addUsers" tabindex="9" >
+					</form>
+					<br>
+					<br>
+					<a href="adminlanding.html" ><button tabindex="10" >Return to previous screen</button></a>
+                    <br>
+                    <br>
+                </fieldset>
+            </section>
+		</main>
+		<footer>
+			Copyright &copy Utopia Airlines 2021<br>
+			<script>
+				document.write("Last modified on " + document.lastModified);
+			</script><br>
+			<a href="mailto:mail@utopia.com" >mail@utopia.com</a><br>
+		</footer> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Programmer: Damian Zylski
+Date: 4/16/21
+System: Windows 7 Enterprise - Netbeans 12
+Project: Utopia
+File: adminAddflights.HTML
+
+Purpose: To create the add flights option page for admin Users
+-->
+<html>
+    <head>
+        <title>ADMIN ADD FLIGHTS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="utopia.css" >
+        <meta name="description" content="A admin web page">
+        <meta name="author" content="Damian Zylski">
+        <meta name = "revised" content = "Shinra, 4/01/2021" />
+    </head>
+    <body>
+        <div id="wrapper" >
+            <header>
+                <h1>Administrator Control Panel</h1>
+            </header>
+            <nav>
+                <a href="index.html" ><button>Home</button></a>
+            </nav>
+        <main>
+            <section>
+                <br>
+                <fieldset>
+                    <legend>Please enter details for new flight to add. Click submit when finished</legend>
+                    <br>
+					<!--FLIGHT-->
+					<form action="AdminFlightServlet" method="post" >
+					<input type="hidden" id="custId" name="action" value="addFlights">					
+					<label for="Name" >Flight ID: </label><br>
+                    <input type="text" name="ID" size="25" required="required" tabindex="1">
+					<br>
+					<label for="Name" >Route ID: </label><br>
+                    <input type="text" name="Route" size="25" required="required" tabindex="2">
+					<br>
+					<label for="Name" >Airplane ID: </label><br>
+                    <input type="text" name="Airplane" size="25" required="required" tabindex="3">
+					<br>
+					<label for="Name" >Departure Time: (YYYY-MM-DD HH:MM:SS)</label><br>
+                    <input type="text" name="Departure" size="25" required="required" tabindex="4">
+					<br>
+					<label for="Name" >Seat Price: </label><br>
+                    <input type="text" name="Price" size="25" required="required" tabindex="5">
+					<br>
+					<label for="Name" >Reserved First Class Seats: </label><br>
+                    <input type="text" name="First" size="25" required="required" tabindex="6">
+					<br>
+					<label for="Name" >Reserved Business Class Seats: </label><br>
+                    <input type="text" name="Business" size="25" required="required" tabindex="7">
+					<br>
+					<label for="Name" >Reserved Economy Class Seats: </label><br>
+                    <input type="text" name="Economy" size="25" required="required" tabindex="8">
+					<br>
+					<input type="submit" value="Submit Flight" name="addFlights" tabindex="9" >
+					</form>
+					<br>
+					<br>
+					<a href="adminlanding.html" ><button tabindex="10" >Return to previous screen</button></a>
+                    <br>
+                    <br>
+                </fieldset>
+            </section>
+		</main>
+		<footer>
+			Copyright &copy Utopia Airlines 2021<br>
+			<script>
+				document.write("Last modified on " + document.lastModified);
+			</script><br>
+			<a href="mailto:mail@utopia.com" >mail@utopia.com</a><br>
+		</footer>
+        </div>
+    </body>
+</html>

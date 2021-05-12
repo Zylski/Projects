@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Programmer: Damian Zylski
+Date: 3/17/21
+System: Windows 7 Enterprise - Netbeans 12
+Project: Utopia
+File: adminLanding.HTML
+
+Purpose: To create the landing page for admins
+-->
+<html>
+    <head>
+        <title>ADMIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="utopia.css" >
+        <meta name="description" content="A admin web page">
+        <meta name="author" content="Damian Zylski">
+        <meta name = "revised" content = "Shinra, 4/01/2021" />
+    </head>
+    <body>
+        <div id="wrapper" >
+            <header>
+                <h1>Administrator Control Panel</h1>
+            </header>
+            <nav>
+                <a href="index.html" ><button>Home</button></a>
+            </nav>
+        <main>
+            <section>
+                <br>
+                <fieldset >
+                    <legend>Please choose an administrator option:</legend>
+                    <br>
+                    <!--FLIGHT-->
+                    <h2>FLIGHTS</h2>
+                    <a href="adminflights.html" ><button>Add/Update/Delete/Read Flights</button></a>
+                    <br>                    
+                    <!--EMPLOYEES-->
+                    <h2>USERS</h2>
+                    <a href="adminusers.html" ><button>Add/Update/Delete/Read Users and Employees</button></a>
+                    <br>
+                    <br>
+                    <!--RETURN-->
+                    <h3>RETURN TO LOGIN SCREEN</h3>
+                    <a href="index.html" ><button>Return to login screen</button></a>
+                    <br>
+                </fieldset>
+                </section>
+            </main>
+            <footer>
+                Copyright &copy Utopia Airlines 2021<br>
+                <script>
+                    document.write("Last modified on " + document.lastModified);
+                </script><br>
+                <a href="mailto:mail@utopia.com" >mail@utopia.com</a><br>
+            </footer> 
+        </div>
+    </body>
+</html>

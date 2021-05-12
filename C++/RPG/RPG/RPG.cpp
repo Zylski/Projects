@@ -9,7 +9,8 @@ System:           Windows XP - Visual studio .net 2003
 PROGRAM: RPG
 
 Purpose: To create a simple rpg that involves a character wandering through several 
-rooms.
+rooms. Edit 2021: I may have not been doing this the right way back then. I look at this now
+and wonder why I coded things the way I did!
 */
 //------------------------------------------------------------------------------------------
 
@@ -767,7 +768,7 @@ int main()
 
 	Battle("Skeleton.txt");
 
-	//printf("FUCK YOU!");
+	//printf("!");
 
 	system("pause");
 	return 0;

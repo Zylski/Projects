@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Programmer: Damian Zylski
+Date: 3/17/21
+System: Windows 7 Enterprise - Netbeans 12
+Project: Utopia
+File: adminusers.HTML
+
+Purpose: To create the option page for admin Users
+-->
+<html>
+    <head>
+        <title>ADMIN USERS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="utopia.css" >
+        <meta name="description" content="A admin web page">
+        <meta name="author" content="Damian Zylski">
+        <meta name = "revised" content = "Shinra, 4/01/2021" />
+    </head>
+    <body>
+        <div id="wrapper" >
+            <header>
+                <h1>Administrator Control Panel</h1>
+            </header>
+            <nav>
+                <a href="index.html" ><button>Home</button></a>
+            </nav>
+        <main>
+            <section>
+                <br>
+                <fieldset>
+                    <legend>Please choose an administrator option for Users:</legend>
+                    <br>
+					<!--FLIGHT-->
+					<div class="pad" >
+					<h2>ADD USERS</h2>
+					<a href="adminadduser.html" ><button>Add Users</button></a>
+					</div>
+
+					<form action="AdminServlet" method="post" >
+					<input type="hidden" id="custId" name="action" value="updateUsers">
+					<h2>UPDATE USERS</h2>
+					<input type="submit" value="Update Users" name="updateUsers" tabindex="2" > 
+					</form>
+					
+					<form action="AdminServlet" method="post" >
+					<input type="hidden" id="custId" name="action" value="deleteUsers">
+					<h2>DELETE USERS</h2>
+					<input type="submit" value="Delete Users" name="deleteUsers" tabindex="3" > 
+					</form>
+					
+					<form action="AdminServlet" method="post" >
+					<input type="hidden" id="custId" name="action" value="readUsers">
+					<h2>DISPLAY USERS</h2>
+					<input type="submit" value="Read Users" name="readUsers" tabindex="4" >
+					</form>
+					<br>
+					<h3>Return to previous screen</h3>
+					<a href="adminlanding.html" ><button>Return</button></a>
+                    <br>
+                    <br>
+                </fieldset>
+			</section>
+		</main>
+		<footer>
+			Copyright &copy Utopia Airlines 2021<br>
+			<script>
+				document.write("Last modified on " + document.lastModified);
+			</script><br>
+			<a href="mailto:mail@utopia.com" >mail@utopia.com</a><br>
+		</footer> 
+        </div>
+    </body>
+</html>

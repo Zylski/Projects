@@ -1,0 +1,82 @@
+/*
+Programmer: Damian Zylski
+Date: 4/1/21
+Project: Quack
+
+Purpose: to practice CSS
+*/
+
+* {box-sizing: border-box;
+   }
+
+
+header {
+        background-image: url(PICTURES/logo.jpg);
+        background-repeat: no-repeat;
+        height: 170px;
+        padding-left: 170px;
+        padding-right: 10%;
+        border-bottom: 1px inset #000000
+        }
+
+body {background-color: #bcbcff;
+      background-image: url("PICTURES/clouds2.gif");
+      background-size: 10%;}
+
+nav button{
+    width: 170px;
+    background-color: #0c5d92;
+    color: #CCCCCC;
+    font-size: 150%;}
+
+
+main section p {padding: 1% 0 0 1%;
+                font-size: 150%;
+                margin: 0;}
+
+legend {font-size: 200%;
+        color: #DDDDDD}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 250%;
+    padding-top: 2%;}
+
+h3 {padding: 1%;}
+
+form {padding: 1%}
+
+footer {border-top: 1px inset #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 1%}
+
+footer a {text-decoration: none;
+        color: #FFFFFF}
+
+.button {background-color: #2e66b9;
+        margin: 1% 1% 1% 0;
+        font-size: 150%;
+        border: 5px inset #CCCCCC;
+        color: #FFFFFF}
+
+.red {color: #FF0000;}
+
+.pad {padding: 1%}
+
+
+#login {color:#CCCCCC; 
+        text-decoration: none;
+        font-size: 150%;
+        padding: 1%}
+        
+
+#wrapper {background-color: #6565f3;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          color: #FFFFFF;
+          font-size: 100%;}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Programmer: Damian Zylski
+Date: 3/17/21
+System: Windows 7 Enterprise - Netbeans 12
+Project: Utopia
+File: Index.HTML
+
+Purpose: To create the landing page for utopia where the user can choose one of
+many options
+-->
+<html>
+    <head>
+        <title>Utopia Airlines</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="utopia.css" >
+        <meta name="description" content="A login web page">
+        <meta name="author" content="Damian Zylski">
+        <meta name = "revised" content = "Shinra, 4/01/2021" />
+    </head>
+    <body>
+        <div id="wrapper" >
+            <header>
+                <h1>Utopia Airlines Management System</h1> 
+            </header>
+            <nav>
+                <a href="index.html" ><button>Home</button></a>
+            </nav>
+            <main>
+                <section>
+                    <br><br>
+                    <p>
+                        UTOPIA LOGIN: 
+                    </p>
+                    <form action="Utopia" method="post" >
+                        <fieldset>
+                            <legend>Please enter your username and password to login</legend>
+                            <br>
+                            <label for="Name" >Name: </label><br>
+                            <input type="text" name="Name" size="25" required="required" tabindex="1">
+                            <br>
+                            <label for="Password" >Password: </label><br>
+                            <input type="password" name="Password" size="25" required="required" tabindex="2">
+                            <br>
+                            <br>
+                        </fieldset>
+                        <input class="button" type="submit" value="Submit" tabindex="3" >
+                    </form>
+                    <br><br>
+                </section>
+            </main>
+            <footer>
+                Copyright &copy Utopia Airlines 2021<br>
+                <script>
+                    document.write("Last modified on " + document.lastModified);
+                </script><br>
+                <a href="mailto:mail@utopia.com" >mail@utopia.com</a><br>
+            </footer>           
+        </div>
+    </body>
+</html>
